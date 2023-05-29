@@ -1,0 +1,44 @@
+.lyricLineContainer {
+  display: flex;
+  align-items: center;
+}
+body {
+  background-color: cadetblue;
+}
+/* Estilos CSS para la presentación de la letra */
+
+#lyricsStage2,
+#lyricsStage3 {
+  display: none;
+}
+
+.currentLyric {
+  font-weight: bold;
+}
+
+#lyricsSliderContainer {
+  height: 100px;
+  width: 400px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+/* #lyricsSlider {
+  animation-name: slide;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 0s;
+  height: 100%;
+  padding: 10px;
+}
+ */
+@keyframes slide {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}

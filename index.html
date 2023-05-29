@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Letra de Canción</title>
+  </head>
+  <body>
+    <div id="lyricsStage1">
+      <h1>Etapa 1: Ingrese las letras de la canción</h1>
+      <textarea id="lyricsInput" cols="30" rows="10"></textarea>
+      <br />
+      <button id="addLyricsButton">Agregar letras</button>
+    </div>
+
+    <div id="lyricsStage2" class="hidden">
+      <h1>Etapa 2: Ingrese los tiempos para cada renglón</h1>
+      <div id="lyricsContainer"></div>
+      <br />
+      <button id="startSongButton">Iniciar canción</button>
+      <br />
+      <label for="loopCheckbox">
+        <input type="checkbox" id="loopCheckbox" /> Repetir canción
+      </label>
+    </div>
+
+    <div id="lyricsStage3" class="hidden">
+      <h1>Etapa 3: Reproduciendo la canción</h1>
+      <div id="lyricsSlider"></div>
+      <br />
+      <button id="stopSongButton">Detener</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
