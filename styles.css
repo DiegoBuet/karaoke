@@ -1,9 +1,52 @@
+/* 
+paletas de colores
+0D1B2A
+1B263B
+415A77
+778DA9
+E0E1DD
+
+
+*/
+
+body {
+  background-color: #0d1b2a;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-general {
+  margin: 0 auto;
+  background-color: #415a77;
+  width: 50%;
+  height: 40rem;
+  font-family: "Roboto", sans-serif;
+  color: #e0e1dd;
+  border-radius: 4px;
+}
+.container {
+  padding-top: 1rem;
+  height: 100%;
+  width: 100%;
+  margin-top: 5rem;
+}
+.lyricsContainer,
+.lyricsInput {
+  margin-top: 2rem;
+  background-color: #778da9;
+  color: #e0e1dd;
+  outline: none;
+  resize: none;
+  border-radius: 5px;
+}
 .lyricLineContainer {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0.4rem 0;
 }
-body {
-  background-color: cadetblue;
+.lyricLineContainer .timingInput {
 }
 /* Estilos CSS para la presentación de la letra */
 
@@ -11,9 +54,31 @@ body {
 #lyricsStage3 {
   display: none;
 }
+.etapa2 {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  width: 70%;
+}
+.timingInput {
+  width: 5rem;
+  display: inline-block;
+  color: #0d1b2a;
+  background-color: #e0e1dd;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.renglones {
+  margin-top: 4rem;
+  width: 100%;
+  height: 5rem;
+}
 
 .currentLyric {
   font-weight: bold;
+  color: #e0e1dd;
 }
 
 #lyricsSliderContainer {
@@ -33,6 +98,30 @@ body {
   padding: 10px;
 }
  */
+
+/* Botones */
+.btn {
+  margin-top: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #e0e1dd;
+  width: 140px;
+  height: 40px;
+  border-width: 1px;
+  border: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 0px 2px 14px -7px #778da9;
+  text-shadow: 0px 1px 0px #778da9;
+  background: linear-gradient(#0d1b2a, #1b263b);
+}
+
+.btn:hover {
+  background: linear-gradient(#1b263b, #0d1b2a);
+  cursor: pointer;
+}
 @keyframes slide {
   from {
     transform: translateY(100%);

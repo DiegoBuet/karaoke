@@ -106,6 +106,7 @@ function renderLyricsStage3() {
         currentTiming <= endTime
       ) {
         // Si el tiempo está dentro del rango, muestra el renglón correspondiente
+
         lyricsSlider.textContent = currentLyric.text;
       }
       if (currentTiming === endTime) {

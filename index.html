@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Letra de Canción</title>
   </head>
   <body>
-    <div id="lyricsStage1">
-      <h1>Etapa 1: Ingrese las letras de la canción</h1>
-      <textarea id="lyricsInput" cols="30" rows="10"></textarea>
-      <br />
-      <button id="addLyricsButton">Agregar letras</button>
-    </div>
+    <main class="main-general">
+      <div class="container">
+        <div id="lyricsStage1">
+          <h2>Etapa 1: Ingrese las letras de la canción</h2>
+          <textarea
+            class="lyricsInput"
+            id="lyricsInput"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <br />
+          <button class="btn" id="addLyricsButton">Agregar letras</button>
+        </div>
 
-    <div id="lyricsStage2" class="hidden">
-      <h1>Etapa 2: Ingrese los tiempos para cada renglón</h1>
-      <div id="lyricsContainer"></div>
-      <br />
-      <button id="startSongButton">Iniciar canción</button>
-      <br />
-      <label for="loopCheckbox">
-        <input type="checkbox" id="loopCheckbox" /> Repetir canción
-      </label>
-    </div>
+        <div id="lyricsStage2" class="etapa2 hidden">
+          <h2>Etapa 2: Ingrese los tiempos para cada renglón</h2>
+          <div id="lyricsContainer" class="lyricsContainer"></div>
+          <br />
+          <button class="btn" id="startSongButton">Iniciar canción</button>
+          <br />
+          <label for="loopCheckbox">
+            <input type="checkbox" id="loopCheckbox" /> Repetir canción
+          </label>
+        </div>
 
-    <div id="lyricsStage3" class="hidden">
-      <h1>Etapa 3: Reproduciendo la canción</h1>
-      <div id="lyricsSlider"></div>
-      <br />
-      <button id="stopSongButton">Detener</button>
-    </div>
+        <div id="lyricsStage3" class="hidden">
+          <h2></h2>
+          <div class="renglones" id="lyricsSlider"></div>
+          <br />
+          <button class="btn" id="stopSongButton">Detener</button>
+        </div>
+      </div>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
